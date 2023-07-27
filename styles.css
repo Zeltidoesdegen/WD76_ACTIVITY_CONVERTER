@@ -3,6 +3,11 @@ body{
     padding: 0;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
 .body-container {
     /* background: black; */
     border: #000 solid 1px  ;
@@ -50,7 +55,6 @@ body{
 }
 
 .button-media.active {
-    position: absolute;
     z-index: 500;
     background: url("img/close.png");
     background-repeat: no-repeat;
