@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.body-container {
+    /* background: black; */
+    border: #000 solid 1px  ;
+    margin-top: 100px;
+    width: 450px;
+    height: 700px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.input-container {
+    background: linear-gradient(230deg, #f46b45, #eea849);
+    width: 100%;
+    height: 55%;
+    padding: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.output-container {
+    background: linear-gradient(#ECE9E6, #FFFFFF);
+    width: 100%;
+    height: 45%;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: none;
+}
+
+.button-media {
+    background: url("img/menu.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button-media.active {
+    position: absolute;
+    z-index: 500;
+    background: url("img/close.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    transition: 0.3s ease;
+}
