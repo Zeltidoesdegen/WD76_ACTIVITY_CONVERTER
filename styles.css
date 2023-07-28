@@ -127,23 +127,49 @@ input::-webkit-inner-spin-button {
     background: #fff;
 }
 
-.selectMe {
-    position: absolute;
-    margin-left: 21em;  
-}   
-
-select, option{
-    text-align: center;
-    border: none;
-    outline: none;
-    background: linear-gradient(190deg, #f46b45, #eea849);
+#fromUnit{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    background: #f46b45;
+    margin-left: 30px;
+    border: #ECE9E6 1px solid;
     color: #ECE9E6;
 }
 
-select::after {
+#fromUnit option {
     text-align: center;
     word-spacing: 5px;
     outline: none;
     border: none;
-    background: linear-gradient(190deg, #f46b45, #eea849);
+    background: #eea849;
+}
+
+#result {
+    color: #f46b45;
+}
+
+.output-line{
+    display: block;
+    margin-top: 0.2em;
+    margin-left: 1em;
+    width: 18em;
+    height: 0.1875em;
+    background:#eea849;
+}
+
+#toUnit {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    background: #ECE9E6;
+    margin-left: 30px;
+    border: #f46b45 1px solid;
+    color: #f46b45;
+}
+
+#toUnit option {
+    text-align: center;
+    word-spacing: 5px;
+    outline: none;
+    border: none;
+    background: #eea849;
 }
