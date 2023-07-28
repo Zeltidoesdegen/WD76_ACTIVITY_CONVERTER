@@ -53,12 +53,12 @@ function myResult(){
 	}
 
     else if(inputTypeValue === "Meter" && resultTypeValue==="Foot"){
-		//Meter to Millimeter formula 
+		//Meter to Foot formula 
 		result.value = Number(input.value) * 3.281;
 	}
 
     else if(inputTypeValue === "Meter" && resultTypeValue==="Inch"){
-		//Meter to Millimeter formula 
+		//Meter to Inch formula 
 		result.value = Number(input.value) * 39.37;
 	}
 
@@ -265,7 +265,7 @@ function myResult(){
 	}
 
     // ----------------------------------------------------
-    // ----------------------------------------------------+
+    // ----------------------------------------------------
     
     if(inputTypeValue === "Kelvin" && resultTypeValue==="Celcius"){
 		//Kelvin to Celcius formula 
@@ -279,6 +279,204 @@ function myResult(){
     
     else if(inputTypeValue === "Kelvin" && resultTypeValue==="Kelvin"){
 		//Kelvin to Kelvin formula 
+		result.value = input.value;
+	}
+
+    // ----------------------------------------------------
+    // ----------------------------------------------------
+
+    if(inputTypeValue === "Sq-Kilometer" && resultTypeValue==="Sq-Kilometer"){
+		//Sq-Kilometer to Sq-Kilometer formula 
+		result.value = input.value;
+	}
+    
+    else if(inputTypeValue === "Sq-Kilometer" && resultTypeValue==="Sq-Meter"){
+		//Sq-Kilometer to Sq-Meter formula 
+		result.value = Number(input.value) * 1000000;
+	}
+    
+    else if(inputTypeValue === "Sq-Kilometer" && resultTypeValue==="Sq-Mile"){
+		//Sq-Kilometer to Sq-Mile formula 
+		result.value = Number(input.value) / 2.59;
+	}
+
+    else if(inputTypeValue === "Sq-Kilometer" && resultTypeValue==="Sq-Yard"){
+		//Sq-Kilometer to Sq-Yard formula 
+		result.value = Number(input.value) * 1196000;
+	}
+
+    else if(inputTypeValue === "Sq-Kilometer" && resultTypeValue==="Hectare"){
+		//Sq-Kilometer to Hectare formula 
+		result.value = Number(input.value) * 100;
+	}
+
+    else if(inputTypeValue === "Sq-Kilometer" && resultTypeValue==="Acre"){
+		//Sq-Kilometer to Acre formula 
+		result.value = Number(input.value) * 247.105;
+	}
+
+    // ----------------------------------------------------
+    // ----------------------------------------------------
+
+    if(inputTypeValue === "Sq-Meter" && resultTypeValue==="Sq-Kilometer"){
+		//Sq-Meter to Sq-Kilometer formula 
+        result.value = Number(input.value) / 1000000;
+	}
+    
+    else if(inputTypeValue === "Sq-Meter" && resultTypeValue==="Sq-Meter"){
+		//Sq-Meter to Sq-Meter formula 
+		result.value = input.value;
+	}
+    
+    else if(inputTypeValue === "Sq-Meter" && resultTypeValue==="Sq-Mile"){
+		//Sq-Meter to Sq-Mile formula 
+		result.value = Number(input.value) / 2590000;
+	}
+
+    else if(inputTypeValue === "Sq-Meter" && resultTypeValue==="Sq-Yard"){
+		//Sq-Meter to Sq-Yard formula 
+		result.value = Number(input.value) * 1.196;
+	}
+
+    else if(inputTypeValue === "Sq-Meter" && resultTypeValue==="Hectare"){
+		//Sq-Meter to Hectare formula 
+		result.value = Number(input.value) / 10000;
+	}
+
+    else if(inputTypeValue === "Sq-Meter" && resultTypeValue==="Acre"){
+		//Sq-Meter to Acre formula 
+		result.value = Number(input.value) / 4047;
+	}
+
+    // ----------------------------------------------------
+    // ----------------------------------------------------
+
+    if(inputTypeValue === "Sq-Mile" && resultTypeValue==="Sq-Kilometer"){
+		//Sq-Mile to Sq-Kilometer formula 
+        result.value = Number(input.value) * 2.59;
+	}
+    
+    else if(inputTypeValue === "Sq-Mile" && resultTypeValue==="Sq-Meter"){
+		//Sq-Mile to Sq-Meter formula 
+		result.value = Number(input.value) * 2590000;
+	}
+    
+    else if(inputTypeValue === "Sq-Mile" && resultTypeValue==="Sq-Mile"){
+		//Sq-Mile to Sq-Mile formula 
+		result.value = input.value;
+	}
+
+    else if(inputTypeValue === "Sq-Mile" && resultTypeValue==="Sq-Yard"){
+		//Sq-Mile to Sq-Yard formula 
+		result.value = Number(input.value) * 3098000;
+	}
+
+    else if(inputTypeValue === "Sq-Mile" && resultTypeValue==="Hectare"){
+		//Sq-Mile to Hectare formula 
+		result.value = Number(input.value) * 259;
+	}
+
+    else if(inputTypeValue === "Sq-Mile" && resultTypeValue==="Acre"){
+		//Sq-Mile to Acre formula 
+		result.value = Number(input.value) * 640;
+	}
+
+    // ----------------------------------------------------
+    // ----------------------------------------------------
+
+    if(inputTypeValue === "Sq-Yard" && resultTypeValue==="Sq-Kilometer"){
+		//Sq-Yard to Sq-Kilometer formula 
+        result.value = Number(input.value) / 1196000;
+	}
+    
+    else if(inputTypeValue === "Sq-Yard" && resultTypeValue==="Sq-Meter"){
+		//Sq-Yard to Sq-Meter formula 
+		result.value = Number(input.value) / 1.196;
+	}
+    
+    else if(inputTypeValue === "Sq-Yard" && resultTypeValue==="Sq-Mile"){
+		//Sq-Yard to Sq-Mile formula 
+		result.value = Number(input.value) / 3098000;
+	}
+
+    else if(inputTypeValue === "Sq-Yard" && resultTypeValue==="Sq-Yard"){
+		//Sq-Yard to Sq-Yard formula 
+		result.value = input.value;
+	}
+
+    else if(inputTypeValue === "Sq-Yard" && resultTypeValue==="Hectare"){
+		//Sq-Yard to Hectare formula 
+		result.value = Number(input.value) / 11960;
+	}
+
+    else if(inputTypeValue === "Sq-Yard" && resultTypeValue==="Acre"){
+		//Sq-Yard to Acre formula 
+		result.value = Number(input.value) /4840;
+	}
+
+    // ----------------------------------------------------
+    // ----------------------------------------------------
+
+    if(inputTypeValue === "Hectare" && resultTypeValue==="Sq-Kilometer"){
+		//Hectare to Sq-Kilometer formula 
+        result.value = Number(input.value) / 100;
+	}
+    
+    else if(inputTypeValue === "Hectare" && resultTypeValue==="Sq-Meter"){
+		//Hectare to Sq-Meter formula 
+		result.value = Number(input.value) * 10000;
+	}
+    
+    else if(inputTypeValue === "Hectare" && resultTypeValue==="Sq-Mile"){
+		//Hectare to Sq-Mile formula 
+		result.value = Number(input.value) / 259;
+	}
+
+    else if(inputTypeValue === "Hectare" && resultTypeValue==="Sq-Yard"){
+		//Hectare to Sq-Yard formula 
+		result.value = Number(input.value) * 11960;
+	}
+
+    else if(inputTypeValue === "Hectare" && resultTypeValue==="Hectare"){
+		//Hectare to Hectare formula 
+		result.value = input.value;
+	}
+
+    else if(inputTypeValue === "Hectare" && resultTypeValue==="Acre"){
+		//Hectare to Acre formula 
+		result.value = Number(input.value) * 2.471;
+	}
+
+    // ----------------------------------------------------
+    // ----------------------------------------------------
+
+    if(inputTypeValue === "Acre" && resultTypeValue==="Sq-Kilometer"){
+		//Acre to Sq-Kilometer formula 
+        result.value = Number(input.value) / 247.1;
+	}
+    
+    else if(inputTypeValue === "Acre" && resultTypeValue==="Sq-Meter"){
+		//Acre to Sq-Meter formula 
+		result.value = Number(input.value) * 4047;
+	}
+    
+    else if(inputTypeValue === "Acre" && resultTypeValue==="Sq-Mile"){
+		//Acre to Sq-Mile formula 
+		result.value = Number(input.value) / 640;
+	}
+
+    else if(inputTypeValue === "Acre" && resultTypeValue==="Sq-Yard"){
+		//Acre to Sq-Yard formula 
+		result.value = Number(input.value) * 4840;
+	}
+
+    else if(inputTypeValue === "Acre" && resultTypeValue==="Hectare"){
+		//Acre to Hectare formula 
+        result.value = Number(input.value) / 2.471;
+	}
+
+    else if(inputTypeValue === "Acre" && resultTypeValue==="Acre"){
+		//Acre to Acre formula 
 		result.value = input.value;
 	}
 }
